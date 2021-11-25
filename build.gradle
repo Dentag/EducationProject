@@ -16,3 +16,10 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    //RxJava
+    rxVersion = '3.0.0'
+    //Elmslie
+    elmslieVersion = "1.2.0"
+}
