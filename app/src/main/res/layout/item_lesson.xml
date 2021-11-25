@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_lesson_card"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardBackgroundColor="@color/dark_gray"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30sp">
+
+        <TextView
+            android:id="@+id/item_lesson_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/item_lesson_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_lesson_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22:00 - 22:45"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_lesson_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_lesson_name" />
+
+        <ImageView
+            android:id="@+id/item_lesson_open_in_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_open_in"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/item_lesson_time"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
